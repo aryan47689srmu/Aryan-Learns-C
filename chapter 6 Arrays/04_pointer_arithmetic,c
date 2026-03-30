@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main()
+{
+
+    // POINTER ARITHMETIC USING INTEGER POINTER
+    // int a = 5;
+    // int *ptr = &a;
+    // printf("The address of a is %u\n", &a);
+    // printf("The address of a is %u\n", ptr);
+    // ptr++;
+    // printf("The value of ptr is %u\n", ptr);
+
+    // POINTER ARITHMETIC USING CHARACTER POINTER
+
+    char a = 'A';
+    char *ptr = &a;
+    printf("The address of a is %u\n", &a);
+    printf("The address of a is %u\n", ptr);
+    ptr++;
+    printf("The value of ptr is %u\n", ptr);
+    return 0;
+}
+
+
+/*
+What is pointer arithmetic?
+Pointer arithmetic refers to the operations that can be performed on pointers, such as addition and subtraction. When we perform pointer arithmetic, the pointer is moved by a certain number of bytes based on the size of the data type it points to. For example, if we have an integer pointer and we add 1 to it, the pointer will move to the next integer in memory, which is typically 4 bytes away (assuming a 32-bit system). Similarly, if we have a character pointer and we add 1 to it, the pointer will move to the next character in memory, which is typically 1 byte away. Pointer arithmetic allows us to navigate through arrays and other data structures efficiently. 
+*/
+
+
+/*
+Following operations can be performed on a pointer: 
+1. Addition of a number to a pointer. 
+2. Subtraction of a number from a pointer. 
+3. Subtraction of one pointer from another. 
+4. Comparison of two pointer variables.
+*/
